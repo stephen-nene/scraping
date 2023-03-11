@@ -14,23 +14,23 @@ doc = Nokogiri::HTML(response.body)
 puts doc
 ```
 2. Using URI#open:
-
+```ruby
 require 'open-uri'
 require 'nokogiri'
 
 url = "https://www.example.com/"
 doc = Nokogiri::HTML(URI.open(url))
 puts doc
-
+```
 3. Using Kernel#open:
-
+```ruby
 require 'open-uri'
 require 'nokogiri'
 
 url = "https://www.example.com/"
 doc = Nokogiri::HTML(open(url))
 puts doc
-
+```
 4. Using HTTParty:
 
 ```ruby
